@@ -1,0 +1,12 @@
+:root {
+  --grey-color: #2d2d2d;
+  --yellow-color: #ffd439;
+  --turquoise-color: #86fdc6;
+  --blue-color: #35cdeb;
+  --lightgrey-color: #eae7eb;
+  --green-color: #00b763;
+}
+
+html body a {
+  color: var(--yellow-color);
+}

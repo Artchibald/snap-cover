@@ -16,6 +16,7 @@
         gap: 20px;
         width: 100%;
         max-width: 1200px;
+        padding: 30px 0;
 
         @media (min-width: 768px) {
             flex-direction: row;
@@ -67,6 +68,14 @@
         font-weight: bold;
     }
 
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     h2 {
         text-align: center;
         width: 100%;
@@ -86,6 +95,12 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .socialIcon {
+        width: 32px;
+        margin-top: 10px;
+        margin-right: 4px;
     }
 }
 

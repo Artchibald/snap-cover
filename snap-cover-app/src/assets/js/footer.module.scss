@@ -1,0 +1,100 @@
+/* footer.module.scss */
+.footer {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    background-color: var(--medium-grey-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logoImage {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            display: inline;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline;
+            color: white;
+            position: relative;
+            top: -8px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .connect {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+            display: block;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footerColumn {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .footerTitle {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        color: var(--yellow-color);
+        /* Ensure there's no default margin */
+    }
+
+    p {
+        color: white;
+    }
+
+    .footerLink {
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footerBottom {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--yellow-color);
+    background-color: var(--grey-color);
+    box-sizing: border-box;
+}

@@ -1,5 +1,6 @@
 :root {
   --grey-color: #2d2d2d;
+  --medium-grey-color: #394145;
   --yellow-color: #ffd439;
   --turquoise-color: #86fdc6;
   --blue-color: #35cdeb;
@@ -19,6 +20,10 @@ h2.highlighted {
   color: var(--grey-color);
   font-weight: 800;
   padding: 4px 8px;
+}
+
+.light_weight {
+  font-weight: 400;
 }
 
 .button {

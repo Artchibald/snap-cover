@@ -1,0 +1,109 @@
+/* last_section.module.scss */
+.last_section {
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+
+    @media (min-width: 768px) {
+        padding: 60px 0 0 0;
+    }
+
+    .herocontent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin-top: 10%;
+
+        @media (min-width: 768px) {
+            margin-top: 20%;
+        }
+
+        // Mobile layout
+        .heroimage {
+            order: 2; // Place the image after the text
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            z-index: 0;
+
+            img {
+                height: auto;
+                max-width: 70%;
+
+                @media (min-width: 768px) {
+                    max-width: 118%;
+                }
+            }
+        }
+
+        .herotext {
+            order: 1; // Place the text before the image
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            p.hero_p {
+                max-width: 500px;
+                line-height: 1.8;
+            }
+
+            .buttonContainer {
+                margin-top: 20px;
+
+                a {
+                    display: inline-block;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .heroimage {
+                order: 1; // On larger screens, place the image before the text
+                display: flex;
+                justify-content: flex-start;
+                width: 50%;
+
+                img {
+                    width: 118%;
+                }
+            }
+
+            .herotext {
+                order: 2; // On larger screens, place the text after the image
+                margin-right: 20px;
+                text-align: left;
+                align-items: flex-start;
+            }
+        }
+    }
+}

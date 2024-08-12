@@ -1,0 +1,39 @@
+/* topBanner.module.scss */
+.green_banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* Include padding in the element's width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: var(--turquoise-color);
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        color: var(--grey-color);
+        /* Ensure there's no default margin */
+    }
+
+    p {
+        margin: 20px 0;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .button.primary {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .smallTitle {
+        font-weight: bold;
+        font-size: 2rem;
+        /* Adjusted font size for better visibility */
+    }
+}

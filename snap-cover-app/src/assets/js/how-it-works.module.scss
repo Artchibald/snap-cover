@@ -1,0 +1,86 @@
+/* new-module.module.scss */
+.HowItWorks {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: none;
+
+    @media (min-width: 1200px) {
+        background-image: url(./../img/blue-bg-line.png);
+        background-position: center top;
+        overflow: visible;
+        background-size: 1920px 1350px;
+        background-repeat: no-repeat;
+    }
+
+    .HowItWorksInner {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .title {
+            margin-bottom: 20px;
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 2rem;
+            /* Adjusted font size for better visibility */
+        }
+
+        .smallTitle {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: bold;
+            font-size: 2rem;
+            /* Adjusted font size for better visibility */
+        }
+
+        .paragraph {
+            margin-bottom: 40px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .thumbnailGrid {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow columns to wrap on smaller screens */
+            justify-content: space-between;
+
+            .thumbnailColumn {
+                width: 100%;
+                /* Default to full width for mobile */
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @media (min-width: 768px) {
+                    width: 48%;
+                    /* Adjust width for tablets and larger screens */
+                }
+            }
+
+            img {
+                width: 70%;
+                margin: 0 auto;
+                height: auto;
+            }
+
+            @media (min-width: 768px) {
+                .illustration2 {
+                    margin-top: 20px;
+                }
+
+                .illustration3 {
+                    margin-top: 150px;
+                }
+
+                .illustration4 {
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+}

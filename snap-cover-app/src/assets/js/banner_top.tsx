@@ -15,6 +15,7 @@ const BannerTop: React.FC = () => {
             </Typography>
 
         </Box>
+
     );
 };
 

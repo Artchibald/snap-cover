@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, IconButton, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -13,6 +13,21 @@ const Nav: React.FC = () => {
         setMobileNavOpen(!mobileNavOpen);
     };
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768) {
+                setMobileNavOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <Box className={styles.mainNav}>
             <img src={logo} alt="Snap Cover Logo" className={styles.logoImage} />
@@ -21,11 +36,11 @@ const Nav: React.FC = () => {
                 <span>COVER</span>
             </Typography>
             <Box className={styles.navLinks}>
-                <a href="#home">Home</a>
-                <a href="#about">How It Works</a>
-                <a href="#services">Dapp</a>
-                <a href="#contact">Contact</a>
-                <a href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement"><img src={firefox} alt="Firefox Logo" className={styles.firefox} /></a>
+                <a className={styles.textlink} href="#home">Home</a>
+                <a className={styles.textlink} href="#about">How It Works</a>
+                <a className={styles.textlink} href="#services">Dapp</a>
+                <a className={styles.textlink} href="#contact">Contact</a>
+                <a href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement" ><img src={firefox} alt="Firefox Logo" className={styles.firefox} /></a>
             </Box>
             <IconButton
                 className={styles.burgerMenu}
@@ -42,12 +57,13 @@ const Nav: React.FC = () => {
                         aria-label="close"
                         onClick={toggleMobileNav}
                     >
-                        <CloseIcon style={{ color: 'white' }} />
+                        <CloseIcon style={{ color: 'white', fontSize: '3rem' }} />
                     </IconButton>
                     <a href="#home" onClick={toggleMobileNav}>Home</a>
                     <a href="#about" onClick={toggleMobileNav}>About</a>
                     <a href="#services" onClick={toggleMobileNav}>Services</a>
                     <a href="#contact" onClick={toggleMobileNav}>Contact</a>
+                    <a href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement" ><img src={firefox} alt="Firefox Logo" /></a>
                 </Box>
             )}
         </Box>

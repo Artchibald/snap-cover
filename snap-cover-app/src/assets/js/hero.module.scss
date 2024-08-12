@@ -18,6 +18,7 @@
     min-height: 90vh;
     /* Full viewport height */
     width: 100%;
+    z-index: 0;
 
     /* Ensure the hero takes up full width */
     .herocontent {
@@ -67,6 +68,8 @@
                 a {
                     display: inline-block;
                     margin-right: 20px;
+                    margin-bottom: 10px;
+                    ;
                 }
             }
         }

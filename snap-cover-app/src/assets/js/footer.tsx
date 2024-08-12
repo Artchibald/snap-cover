@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <SmartphoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="https://metamask.io/" target="_blank">DAPP</Link>
+                                    <Link href="https://metamask.io/" target="_blank">GET DAPP</Link>
                                 </Typography>
                             </Grid>
                         </Grid>

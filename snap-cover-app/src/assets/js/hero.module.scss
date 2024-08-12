@@ -1,0 +1,144 @@
+/* hero.module.scss */
+.hero {
+    background-color: var(--lightgrey-color);
+    /* Grey background color */
+    background-image:
+        linear-gradient(to right, transparent 1px, #fff 1px, #fff 2px, transparent 2px),
+        linear-gradient(to bottom, transparent 1px, #fff 1px, #fff 2px, transparent 2px);
+    background-size: 20px 20px;
+    /* Size of the grid cells */
+    background-repeat: repeat;
+    position: relative;
+    /* Repeat the pattern */
+    padding: 40px 0 0 0;
+    /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    /* Full viewport height */
+    width: 100%;
+
+    /* Ensure the hero takes up full width */
+    .herocontent {
+        display: flex;
+        flex-direction: column;
+        /* Mobile-first: stack text and image vertically */
+        align-items: flex-start;
+        /* Align items to the start (left) on mobile */
+        width: 100%;
+        padding: 0 10px;
+        /* Horizontal padding */
+        box-sizing: border-box;
+        margin-top: 20%;
+
+        .herotext {
+            z-index: 1;
+            flex: 1;
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Center-align text vertically within the column */
+            align-items: flex-start;
+            /* Align text to the start (left) */
+            text-align: left;
+
+            /* Align text to the left */
+            h2 {
+                font-size: 2rem;
+                /* Adjust as needed */
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                /* Adjust as needed */
+            }
+
+            p.hero_p {
+                max-width: 500px;
+                line-height: 1.8;
+            }
+
+            .buttonContainer {
+                margin-top: 20px;
+
+                a {
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .heroimage {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            z-index: 0;
+
+            img {
+                /* Adjust size for mobile */
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .herocontent {
+            flex-direction: row;
+            /* Change to horizontal layout on larger screens */
+            align-items: center;
+            /* Center-align items vertically */
+            max-width: 1200px;
+            /* Max width of the hero section */
+            margin: 0 auto;
+            /* Center the hero section horizontally */
+        }
+
+        .herotext {
+            margin-right: 20px;
+            /* Space between text and image */
+            text-align: left;
+            /* Align text to the left on larger screens */
+            align-items: flex-start;
+            /* Align text to the start (left) */
+        }
+
+        .heroimage {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0;
+
+            /* Align image to the end (right) of the container */
+            img {
+                width: 68%;
+                /* Increase the image size on larger screens */
+                height: auto;
+                align-self: flex-end;
+                /* Align the image to the bottom */
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .heroimage {
+        right: -50%;
+    }
+}
+
+@media (min-width: 998px) {
+    .heroimage {
+        right: -20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .heroimage {
+        right: 7%;
+    }
+}

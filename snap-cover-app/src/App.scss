@@ -7,11 +7,62 @@
   --green-color: #00b763;
 }
 
+// typography
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// body {
-//   font-family: 'Poppins', sans-serif;
-// }
 body a {
   color: var(--yellow-color);
+}
+
+h2.highlighted {
+  background-color: var(--yellow-color);
+  color: var(--grey-color);
+  font-weight: 800;
+  padding: 4px 8px;
+}
+
+.button {
+  &.primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--yellow-color);
+    /* Primary color */
+    color: var(--grey-color);
+    font-weight: 800;
+
+    &:hover {
+      background-color: var(--grey-color);
+      color: white;
+    }
+  }
+
+  &.secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--turquoise-color);
+    /* Secondary color */
+    color: var(--grey-color);
+    font-weight: 800;
+
+    &:hover {
+      background-color: var(--grey-color);
+      color: white;
+    }
+  }
 }

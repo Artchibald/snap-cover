@@ -1,5 +1,11 @@
 /* mainNavigation.module.scss */
 .mainNav {
+    position: absolute;
+    top: 30px;
+    /* Adjust as needed */
+    left: 50%;
+    /* Move to the center horizontally */
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,5 +1,7 @@
 /* topBanner.module.scss */
 .banner {
+    position: absolute;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
     /* Include padding in the element's width */

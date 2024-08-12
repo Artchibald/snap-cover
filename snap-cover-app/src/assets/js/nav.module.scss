@@ -4,10 +4,27 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
     padding: 16px 32px;
-    background-color: var(--grey-color);
-    color: white;
+    margin-top: 10px;
+    background-color: transparent;
     box-sizing: border-box;
+
+    .logoImage {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        span {
+            font-weight: 400;
+        }
+    }
 
     .burgerMenu {
         display: block;
@@ -18,42 +35,44 @@
             display: none;
         }
     }
-}
 
-.logoImage {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
+    .navLinks {
+        display: none;
+        gap: 24px;
+        margin-left: auto;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-weight: 900;
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        @media (min-width: 768px) {
+            display: flex;
+        }
 
-.navLinks {
-    display: flex;
-    gap: 24px;
-    margin-left: auto;
+        /* Aligns the links to the right */
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: var(--grey-color);
 
-    /* Aligns the links to the right */
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
-        &:hover {
-            text-decoration: underline;
+        .firefox {
+            width: 20px;
+            height: 20px;
+            background-color: var(--yellow-color);
+            padding: 6px;
+            border-radius: 3px;
+            position: relative;
+            top: -6px
         }
     }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .navLinks {
-        display: none;
-    }
-
     .mobileNav {
         display: flex;
         flex-direction: column;

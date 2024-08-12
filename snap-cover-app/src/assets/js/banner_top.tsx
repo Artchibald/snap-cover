@@ -6,7 +6,11 @@ const BannerTop: React.FC = () => {
         <Box
             className={styles.banner}
         >
-            <Typography variant="h6" component="h2">
+            <Typography
+                variant="h6"
+                component="h2"
+                sx={{ fontSize: '16px' }}
+            >
                 All our services are currently online, find us on the official Metamask&nbsp;<Link href="#">Snaps</Link>&nbsp;page page now
             </Typography>
 

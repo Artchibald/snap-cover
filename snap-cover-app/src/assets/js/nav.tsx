@@ -75,7 +75,7 @@ const Nav: React.FC = () => {
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
-                        transition={{ type: 'spring', stiffness: 300 }}
+                        transition={{ type: 'spring', stiffness: 40, duration: 0.25 }}
                     >
                         <IconButton
                             className={styles.closeButton}

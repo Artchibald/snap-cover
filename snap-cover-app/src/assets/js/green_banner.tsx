@@ -46,7 +46,7 @@ const GreenBanner: React.FC = () => {
                 </Typography>
             </motion.div>
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.6 }}>
-                <Button className="button primary" href="#get-started">
+                <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
                     GET THE DAPP NOW
                 </Button>
             </motion.div>

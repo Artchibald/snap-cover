@@ -27,7 +27,7 @@
         }
 
         @media (min-width: 768px) {
-            top: 40px;
+            top: 0px;
         }
 
         /* Sticky Navigation */
@@ -80,6 +80,10 @@
             display: block;
             font-size: 2rem;
             cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+            }
 
             @media (min-width: 768px) {
                 display: none;

@@ -22,7 +22,7 @@
     z-index: 1;
 
     // top: -88px;
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
         padding: 40px 0 0 0;
     }
 
@@ -90,7 +90,7 @@
             img {
                 /* Adjust size for mobile */
                 height: auto;
-                max-width: 100%;
+                max-width: 80%;
             }
         }
     }

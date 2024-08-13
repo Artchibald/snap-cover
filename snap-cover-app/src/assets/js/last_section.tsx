@@ -65,12 +65,12 @@ const LastSection: React.FC = () => {
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </Typography>
                     <Box className={styles.buttonContainer}>
-                        <Button className="button primary" href="#get-started">
+                        <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
                             GET THE DAPP NOW
                         </Button>
-                        <Button className="button secondary" href="#learn-more">
+                        {/* <Button className="button secondary" href="#contact">
                             CONTACT A SPECIALIST
-                        </Button>
+                        </Button> */}
                     </Box>
                 </motion.div>
             </Box >

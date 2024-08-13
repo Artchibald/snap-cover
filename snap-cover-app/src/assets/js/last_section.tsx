@@ -59,6 +59,7 @@ const LastSection: React.FC = () => {
                     </Typography>
                     <Typography variant="body1" className={styles.hero_p}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
                     </Typography>
                     <Typography variant="body1" className={styles.hero_p}>
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -72,8 +73,8 @@ const LastSection: React.FC = () => {
                         </Button>
                     </Box>
                 </motion.div>
-            </Box>
-        </motion.div>
+            </Box >
+        </motion.div >
     );
 };
 

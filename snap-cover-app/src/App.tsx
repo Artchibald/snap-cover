@@ -14,9 +14,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Hero />
         <BannerTop />
         <Nav />
+        <Hero />
+
+
         <HowItWorks />
         <GreenBanner />
         <LastSection />

@@ -12,6 +12,7 @@
     padding: 8px;
     background-color: var(--grey-color);
     height: 70px;
+    z-index: 2;
 
     @media (min-width: 768px) {
         height: auto;

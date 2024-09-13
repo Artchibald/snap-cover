@@ -34,7 +34,7 @@ const GreenBanner: React.FC = () => {
         >
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.2 }}>
                 <Typography variant="h4" className={styles.smallTitle}>
-                    GET STARTED NOW
+                    TALK WITH A SPECIALIST
                 </Typography>
             </motion.div>
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.4 }}>
@@ -42,8 +42,7 @@ const GreenBanner: React.FC = () => {
                     variant="body1"
                     sx={{ fontSize: '16px' }}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                </Typography>
+                    Starting at just $2 per week for $5,000 in coverage, why risk it? SnapCover simplifies the process of purchasing and renewing protection for your portfolio, offering easy access to affordable coverage from top underwriters.        </Typography>
             </motion.div>
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.6 }}>
                 <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">

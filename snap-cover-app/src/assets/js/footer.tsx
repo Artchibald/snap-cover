@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                         </Typography>
                         <Typography variant="body1">
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="mailto:info@snapcover.com">info@snapcover.com</Link>
+                            <Link href="mailto:info@snapcover.io">info@snapcover.io</Link>
                         </Typography>
                         <Typography variant="body1">
                             <PhoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                         <Grid container spacing={4} className={styles.footerGrid}>
                             <Grid item xs={12} md={6}>
                                 <Typography variant="h6" component="h6" className={styles.connect}>
-                                    BRINGING PEACE OF MIND
+                                    LEGAL
                                 </Typography>
                                 <Typography variant="body1">
                                     <GavelIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />

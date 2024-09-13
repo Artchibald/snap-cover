@@ -16,19 +16,20 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.2 }}  // Animation duration
                 >
                     <Typography variant="h2" className='highlighted'>
-                        CRYPTO COVER.
+                        SECURING YOUR DIGITAL ASSETS
                     </Typography>
                     <Typography variant="h2" className='highlighted'>
-                        IN YOUR METAMASK.
+                        WITH CONFIDENCE.
                     </Typography>
                     <Typography variant="body1" className={styles.hero_p}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                    </Typography>
+                        SnapCover offers users access to multiple Crypto insurers and Cover providers via a simple user interface and API   </Typography>
+                    <Typography variant="body1" className={styles.hero_p}>
+                        Snapcover allows savvy Crypto and DeF investors a way to quickly and easily safeguard their portfolio from various types of hacks and onchain risks. Protect yourself against smart contract vulnerabilities, oracle failures, stablecoin de-pegging and more, with coverage from trusted onchain underwriters. </Typography>
                     <Box className={styles.buttonContainer}>
                         <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
                             GET THE DAPP NOW
                         </Button>
-                        <Button className="button secondary" href="#contact">
+                        <Button className="button secondary" href="mailto:info@snapcover.io">
                             CONTACT A SPECIALIST
                         </Button>
                     </Box>

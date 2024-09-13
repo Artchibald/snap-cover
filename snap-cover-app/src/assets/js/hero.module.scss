@@ -15,8 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 800px;
-    height: 90vh;
+    // min-height: 800px;
     /* Full viewport height */
     width: 100%;
     z-index: 1;
@@ -24,6 +23,7 @@
     // top: -88px;
     @media (min-width: 768px) {
         padding: 40px 0 0 0;
+        height: 90vh;
     }
 
     /* Ensure the hero takes up full width */

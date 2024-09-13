@@ -34,7 +34,7 @@ const HowItWorks: React.FC = () => {
                     HOW SNAP <span className='light_weight'>COVER</span> WORKS
                 </Typography>
                 <Typography variant="body1" className={styles.paragraph}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    Protect your onchain portfolio from protocol hacks and critical economic disruptions, including oracle manipulations and governance attacks. Enjoy peace of mind with coverage across 20+ top protocols, including Curve, Uniswap, and Aave.
                 </Typography>
                 <Box className={styles.thumbnailGrid}>
                     <motion.div
@@ -46,18 +46,18 @@ const HowItWorks: React.FC = () => {
                     >
                         <img src={thumbnail1} className={styles.illustration1} alt="illustration 1" />
                         <Typography variant="h4" className={styles.smallTitle}>
-                            LOG INTO METAMASK
+                            CONNECT YOUR WALLET
                         </Typography>
                         <Typography variant="body1" className={styles.paragraph}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                            Simply connect your wallet and SnapCover will identify available cover for the digital assets in your wallet.
                         </Typography>
 
                         <img src={thumbnail3} className={styles.illustration2} alt="illustration 2" />
                         <Typography variant="h4" className={styles.smallTitle}>
-                            PAY IN CRYPTO
+                            SPECIFY YOUR COVER AMOUNT
                         </Typography>
                         <Typography variant="body1" className={styles.paragraph}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                            Specify the assets you want to cover and the amount of time you would like the cover to last. SnapCover will provide a quote from one of the leading onchain underwriters.
                         </Typography>
                     </motion.div>
 

@@ -52,25 +52,22 @@ const LastSection: React.FC = () => {
                     className={styles.herotext}
                 >
                     <Typography variant="h2" className="highlighted">
-                        PERFECT FOR YOUR
+                        TALK WITH
                     </Typography>
                     <Typography variant="h2" className="highlighted">
-                        PEACE OF MIND.
+                        A SPECIALIST.
                     </Typography>
                     <Typography variant="body1" className={styles.hero_p}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Whether you want to explore your options before securing coverage or need customized protection for your organization, we're here to assist. Connect with a real person for personalized support or join the SnapCover community.
+                    </Typography>
 
-                    </Typography>
-                    <Typography variant="body1" className={styles.hero_p}>
-                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                    </Typography>
                     <Box className={styles.buttonContainer}>
-                        <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
+                        {/* <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
                             GET THE DAPP NOW
-                        </Button>
-                        {/* <Button className="button secondary" href="#contact">
-                            CONTACT A SPECIALIST
                         </Button> */}
+                        <Button className="button secondary" href="mailto:info@snapcover.io">
+                            CONTACT OUR TEAM
+                        </Button>
                     </Box>
                 </motion.div>
             </Box >

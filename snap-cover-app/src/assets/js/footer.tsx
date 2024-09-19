@@ -12,8 +12,8 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-import Twitter from '../img/twitter-icon.png';
-import Telegram from '../img/telegram-icon.png';
+// import Twitter from '../img/twitter-icon.png';
+// import Telegram from '../img/telegram-icon.png';
 import Metamask from '../img/metamask-icon.png';
 
 // Define animation variants
@@ -29,7 +29,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
     // useInView hook to trigger animation when the component is in view
     const [ref, inView] = useInView({
-        triggerOnce: true, // Trigger animation only once
+        triggerOnce: false, // Trigger animation only once
         threshold: 0.1,    // Trigger when 10% of the component is visible
     });
 
@@ -60,7 +60,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                         </Typography>
                         <Typography variant="body1">
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="mailto:info@snapcover.io">info@snapcover.io</Link>
+                            <Link href="#contact">info@snapcover.io</Link>
                         </Typography>
                         <Typography variant="h6" component="h6" className={styles.connect}>
                             CONNECT WITH US

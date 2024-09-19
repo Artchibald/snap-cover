@@ -8,7 +8,7 @@ import LastSectionUser from '../img/LastSectionUser.png';
 const LastSection: React.FC = () => {
     // useInView hook to trigger animation when the component is in view
     const [ref, inView] = useInView({
-        triggerOnce: true, // Trigger animation only once
+        triggerOnce: false, // Allow re-triggering of animation
         threshold: 0.1,    // Trigger when 10% of the component is visible
     });
 
@@ -21,11 +21,13 @@ const LastSection: React.FC = () => {
     const slideLeft = {
         hidden: { x: 50 },
         visible: { x: 0 },
+        exit: { x: 50 }, // Reverse slide when scrolling out
     };
 
     const slideRight = {
         hidden: { x: -50 },
         visible: { x: 0 },
+        exit: { x: -50 }, // Reverse slide when scrolling out
     };
 
     return (
@@ -34,6 +36,7 @@ const LastSection: React.FC = () => {
             ref={ref}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
+            exit="exit"
             variants={fadeIn}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={styles.last_section}
@@ -65,13 +68,13 @@ const LastSection: React.FC = () => {
                         {/* <Button className="button primary" href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">
                             GET THE DAPP NOW
                         </Button> */}
-                        <Button className="button secondary" href="mailto:info@snapcover.io">
+                        <Button className="button secondary" href="#contact">
                             CONTACT OUR TEAM
                         </Button>
                     </Box>
                 </motion.div>
-            </Box >
-        </motion.div >
+            </Box>
+        </motion.div>
     );
 };
 

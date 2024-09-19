@@ -23,7 +23,12 @@ const fadeInUp = {
     visible: { opacity: 1, y: 0 },
 };
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    onOpenModal: () => void;
+}
+
+
+const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
     // useInView hook to trigger animation when the component is in view
     const [ref, inView] = useInView({
         triggerOnce: true, // Trigger animation only once
@@ -59,10 +64,10 @@ const Footer: React.FC = () => {
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
                             <Link href="mailto:info@snapcover.io">info@snapcover.io</Link>
                         </Typography>
-                        <Typography variant="body1">
+                        {/* <Typography variant="body1">
                             <PhoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
                             <Link href="tel:+447719160818">+44(0)7719 160 818</Link>
-                        </Typography>
+                        </Typography> */}
                         <Typography variant="h6" component="h6" className={styles.connect}>
                             CONNECT WITH US
                         </Typography>
@@ -83,7 +88,7 @@ const Footer: React.FC = () => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <GavelIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="#">TERMS</Link>
+                                    <span onClick={onOpenModal}>TERMS</span>
                                 </Typography>
                                 <Typography variant="body1">
                                     <PolicyIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />

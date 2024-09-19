@@ -12,7 +12,7 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-import PhoneIcon from '@mui/icons-material/Phone';
+// import PhoneIcon from '@mui/icons-material/Phone';
 import Twitter from '../img/twitter-icon.png';
 import Telegram from '../img/telegram-icon.png';
 import Metamask from '../img/metamask-icon.png';

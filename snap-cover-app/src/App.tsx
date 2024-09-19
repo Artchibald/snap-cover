@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme'; // Adjust the import path as necessary
@@ -11,6 +10,7 @@ import HowItWorks from './assets/js/how-it-works';
 import GreenBanner from './assets/js/green_banner';
 import LastSection from './assets/js/last_section';
 import Footer from './assets/js/footer';
+import CookieBanner from './assets/js/cookie_banner';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -29,12 +29,10 @@ function App() {
         <GreenBanner />
         <LastSection />
         <Footer onOpenModal={handleOpenModal} />
+        <CookieBanner />
       </div>
     </ThemeProvider>
   );
 }
 
 export default App;
-
-
-

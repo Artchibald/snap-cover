@@ -109,7 +109,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <PsychologyIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="https://t.me/snapcover" target="_blank">HOW IT WORKS</Link>
+                                    <Link href="#how-it-works" >HOW IT WORKS</Link>
                                 </Typography>
                                 <Typography variant="body1">
                                     <SmartphoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />

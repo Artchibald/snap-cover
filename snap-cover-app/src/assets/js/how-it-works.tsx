@@ -53,11 +53,12 @@ const HowItWorks: React.FC = () => {
                         </Typography>
 
                         <img src={thumbnail3} className={styles.illustration2} alt="illustration 2" />
+
                         <Typography variant="h4" className={styles.smallTitle}>
-                            SPECIFY YOUR COVER AMOUNT
+                            MULTIPLE PAYMENT OPTIONS
                         </Typography>
                         <Typography variant="body1" className={styles.paragraph}>
-                            Specify the assets you want to cover and the amount of time you would like the cover to last. SnapCover will provide a quote from one of the leading onchain underwriters.
+                            SnapCover offers various payment opens such as USDC, ETH, & DAI. Providing immediate cover for your assets in a crypto-native environment.
                         </Typography>
                     </motion.div>
 
@@ -70,10 +71,10 @@ const HowItWorks: React.FC = () => {
                     >
                         <img src={thumbnail2} className={styles.illustration3} alt="illustration 3" />
                         <Typography variant="h4" className={styles.smallTitle}>
-                            CHOOSE YOUR COVER
+                            SPECIFY YOUR COVER AMOUNT
                         </Typography>
                         <Typography variant="body1" className={styles.paragraph}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                            Specify the assets you want to cover and the amount of time you would like the cover to last. SnapCover will provide a quote from one of the leading onchain underwriters.
                         </Typography>
 
                         <img src={thumbnail4} className={styles.illustration4} alt="illustration 4" />
@@ -81,7 +82,7 @@ const HowItWorks: React.FC = () => {
                             FOCUS ON THINGS THAT MATTER
                         </Typography>
                         <Typography variant="body1" className={styles.paragraph}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                            Once you have purchased cover you can go about your day enjoying the fact that your digital assets are covered. Perfect for peace of mind.
                         </Typography>
                     </motion.div>
                 </Box>

@@ -34,7 +34,7 @@ const GreenBanner: React.FC = () => {
         >
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.2 }}>
                 <Typography variant="h4" className={styles.smallTitle}>
-                    TALK WITH A SPECIALIST
+                    GET STARTED NOW
                 </Typography>
             </motion.div>
             <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.4 }}>

@@ -61,6 +61,7 @@
             p {
                 font-size: 1rem;
                 /* Adjust as needed */
+                margin-bottom: 1rem;
             }
 
             p.hero_p {
@@ -124,7 +125,7 @@
 
             /* Align image to the end (right) of the container */
             img {
-                width: 68%;
+                width: 61%;
                 /* Increase the image size on larger screens */
                 height: auto;
                 align-self: flex-end;

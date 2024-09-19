@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                         </Typography>
                         <Typography variant="body1">
                             <LocationOnIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="22 George street, W2 5DT, Strand, London, UK">22 George street, W2 5DT, Strand, London, UK</Link>
+                            <Link href="22 George street, W2 5DT, Strand, London, UK">We are based in central London, United Kingdom</Link>
                         </Typography>
                         <Typography variant="body1">
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                         </Typography>
                         <Typography variant="body1">
                             <PhoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="tel:+442089322343">+44(0)208 932 2343</Link>
+                            <Link href="tel:+447719160818">+44(0)7719 160 818</Link>
                         </Typography>
                         <Typography variant="h6" component="h6" className={styles.connect}>
                             CONNECT WITH US

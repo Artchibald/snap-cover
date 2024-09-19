@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.2 }}  // Animation duration
                 >
                     <Typography variant="h2" className='highlighted'>
-                        SECURING YOUR DIGITAL ASSETS
+                        SECURING YOUR DIGITAL ASSETS.
                     </Typography>
                     <Typography variant="h2" className='highlighted'>
                         WITH CONFIDENCE.

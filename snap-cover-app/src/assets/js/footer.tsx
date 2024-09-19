@@ -68,9 +68,9 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                         {/* <Link href="https://x.com/red_pulse_china?lang=en" target="_blank">
                             <img src={Twitter} alt="Twitter Logo" className={styles.socialIcon} />
                         </Link> */}
-                        <Link href="https://t.me/snapcover" target="_blank">
+                        {/* <Link href="https://t.me/snapcover" target="_blank">
                             <img src={Telegram} alt="Telegram Logo" className={styles.socialIcon} />
-                        </Link>
+                        </Link> */}
                         <Link href="https://metamask.io/snaps/" target="_blank">
                             <img src={Metamask} alt="Metamask Snaps Logo" className={styles.socialIcon} />
                         </Link>
@@ -113,7 +113,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <SmartphoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="https://metamask.io/" target="_blank">GET DAPP</Link>
+                                    <Link href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement" target="_blank">GET DAPP</Link>
                                 </Typography>
                             </Grid>
                         </Grid>

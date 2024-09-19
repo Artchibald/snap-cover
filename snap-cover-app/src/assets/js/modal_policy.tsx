@@ -45,10 +45,11 @@ const FadeInModal: React.FC<ModalPolicyProps> = ({ open, onClose }) => {
                     boxShadow: 24,
                     p: 2,
                     borderRadius: 1,
-                    maxWidth: '90%',
+                    maxWidth: '30%',
                     maxHeight: '90vh',
                     overflowY: 'auto', // Enable vertical scrolling
                     textAlign: 'center',
+
                     '@media (max-width:600px)': {
                         p: 1,
                         minWidth: '90%',

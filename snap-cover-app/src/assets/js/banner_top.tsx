@@ -16,7 +16,7 @@ const BannerTop: React.FC = () => {
                 component="h2"
                 sx={{ fontSize: '16px' }}
             >
-                All our services are currently online, find us on the official Metamask&nbsp;<Link href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">Snaps</Link>&nbsp;page page now
+                Our Snap Cover App is currently offline, find us very soon on the official Metamask&nbsp;<Link href="https://snaps.metamask.io/?utm_source=metamask&utm_medium=website&utm_campaign=snaps_open_beta_announcement">Snaps</Link>&nbsp;page
             </Typography>
 
         </motion.div>

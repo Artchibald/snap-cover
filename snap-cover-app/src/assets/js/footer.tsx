@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                         </Typography>
                         <Typography variant="body1">
                             <LocationOnIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="https://maps.google.com/?q=22 George street, W2 5DT, Strand, London, UK" target="_blank">We are based in central London, United Kingdom</Link>
+                            <Link href="https://maps.app.goo.gl/yhL6apa7QHzFGTK49" target="_blank">We are based in central London, United Kingdom</Link>
                         </Typography>
                         <Typography variant="body1">
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
@@ -65,9 +65,9 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                         <Typography variant="h6" component="h6" className={styles.connect}>
                             CONNECT WITH US
                         </Typography>
-                        <Link href="https://x.com/red_pulse_china?lang=en" target="_blank">
+                        {/* <Link href="https://x.com/red_pulse_china?lang=en" target="_blank">
                             <img src={Twitter} alt="Twitter Logo" className={styles.socialIcon} />
-                        </Link>
+                        </Link> */}
                         <Link href="https://t.me/snapcover" target="_blank">
                             <img src={Telegram} alt="Telegram Logo" className={styles.socialIcon} />
                         </Link>
@@ -105,7 +105,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <HomeIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="/" target="_blank">HOME</Link>
+                                    <Link href="/" >HOME</Link>
                                 </Typography>
                                 <Typography variant="body1">
                                     <PsychologyIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />

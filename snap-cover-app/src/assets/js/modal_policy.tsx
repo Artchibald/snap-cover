@@ -58,17 +58,18 @@ const FadeInModal: React.FC<ModalPolicyProps> = ({ open, onClose }) => {
                         textAlign: 'center',
                     }}
                 >
+                    <IconButton
+                        onClick={onClose}
+                        sx={{
+                            position: 'absolute',
+                            top: 8,
+                            right: 8,
+                        }}
+                    >
+                        <CloseIcon />
+                    </IconButton>
                     <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.2 }}>
-                        <IconButton
-                            onClick={onClose}
-                            sx={{
-                                position: 'absolute',
-                                top: 8,
-                                right: 8,
-                            }}
-                        >
-                            <CloseIcon />
-                        </IconButton>
+
                         <Typography
                             sx={{
                                 marginTop: 2,

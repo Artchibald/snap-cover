@@ -12,7 +12,6 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-// import PhoneIcon from '@mui/icons-material/Phone';
 import Twitter from '../img/twitter-icon.png';
 import Telegram from '../img/telegram-icon.png';
 import Metamask from '../img/metamask-icon.png';
@@ -26,7 +25,6 @@ const fadeInUp = {
 interface FooterProps {
     onOpenModal: () => void;
 }
-
 
 const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
     // useInView hook to trigger animation when the component is in view
@@ -58,22 +56,24 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                         </Typography>
                         <Typography variant="body1">
                             <LocationOnIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="22 George street, W2 5DT, Strand, London, UK">We are based in central London, United Kingdom</Link>
+                            <Link href="https://maps.google.com/?q=22 George street, W2 5DT, Strand, London, UK" target="_blank">We are based in central London, United Kingdom</Link>
                         </Typography>
                         <Typography variant="body1">
                             <EmailIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
                             <Link href="mailto:info@snapcover.io">info@snapcover.io</Link>
                         </Typography>
-                        {/* <Typography variant="body1">
-                            <PhoneIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: "relative" }} />
-                            <Link href="tel:+447719160818">+44(0)7719 160 818</Link>
-                        </Typography> */}
                         <Typography variant="h6" component="h6" className={styles.connect}>
                             CONNECT WITH US
                         </Typography>
-                        <Link href="https://x.com/red_pulse_china?lang=en"><img src={Twitter} alt="Twitter Logo" className={styles.socialIcon} /></Link>
-                        <Link href="tg://resolve?domain=username"> <img src={Telegram} alt="Telegram Logo" className={styles.socialIcon} /></Link>
-                        <Link href="https://metamask.io/snaps/">  <img src={Metamask} alt="Metmask Snaps Logo" className={styles.socialIcon} /></Link>
+                        <Link href="https://x.com/red_pulse_china?lang=en" target="_blank">
+                            <img src={Twitter} alt="Twitter Logo" className={styles.socialIcon} />
+                        </Link>
+                        <Link href="https://t.me/snapcover" target="_blank">
+                            <img src={Telegram} alt="Telegram Logo" className={styles.socialIcon} />
+                        </Link>
+                        <Link href="https://metamask.io/snaps/" target="_blank">
+                            <img src={Metamask} alt="Metamask Snaps Logo" className={styles.socialIcon} />
+                        </Link>
                     </motion.div>
 
                     <motion.div
@@ -92,11 +92,11 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                                 </Typography>
                                 <Typography variant="body1">
                                     <PolicyIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="#">CONDITIONS</Link>
+                                    <span onClick={onOpenModal}>CONDITIONS</span>
                                 </Typography>
                                 <Typography variant="body1">
                                     <CopyrightIcon sx={{ marginRight: '8px', color: 'gray', top: '8px', position: 'relative' }} />
-                                    <Link href="#">PRIVACY</Link>
+                                    <span onClick={onOpenModal}>PRIVACY</span>
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -121,7 +121,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 </Box>
             </motion.div>
             <Typography variant="body2" className={styles.footerBottom}>
-                2024 - SNAP COVER - All rights reserved, see <Link href="#" target="_blank">terms</Link> and <Link href="#" target="_blank">conditions</Link>.
+                2024 - SNAP COVER - All rights reserved, see  <span onClick={onOpenModal}>terms</span> and  <span onClick={onOpenModal}>conditions</span>.
             </Typography>
         </Box>
     );

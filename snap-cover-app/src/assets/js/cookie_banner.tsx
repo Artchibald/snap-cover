@@ -91,19 +91,17 @@ const CookieBanner: React.FC<CookieBannerProps> = ({ open = true, onClose }) => 
                     This website uses cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.
                 </Typography>
             </motion.div>
-            <motion.div variants={slideUp} transition={{ duration: 0.8, delay: 0.4 }}>
-                <Button
-                    className="button primary"
-                    onClick={handleClose}
-                    sx={{
-                        '@media (max-width:600px)': {
-                            marginTop: 2, // Space between text and button on mobile
-                        },
-                    }}
-                >
-                    Accept
-                </Button>
-            </motion.div>
+            <Button
+                className="button primary"
+                onClick={handleClose}
+                sx={{
+                    '@media (max-width:600px)': {
+                        marginTop: 2, // Space between text and button on mobile
+                    },
+                }}
+            >
+                Accept
+            </Button>
         </Box>
     );
 };

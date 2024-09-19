@@ -1,6 +1,5 @@
 {
   "name": "snap-cover-app",
-  "homepage": "https://archibaldbutler.com/projects/snap-cover/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

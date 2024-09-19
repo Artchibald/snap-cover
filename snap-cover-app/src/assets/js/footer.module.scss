@@ -118,4 +118,9 @@
     color: var(--yellow-color);
     background-color: var(--grey-color);
     box-sizing: border-box;
+
+    span {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

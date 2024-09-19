@@ -52,6 +52,7 @@ const FadeInModal: React.FC<ModalPolicyProps> = ({ open, onClose }) => {
                     '@media (max-width:600px)': {
                         p: 1,
                         minWidth: '90%',
+                        maxHeight: '90%',
                     },
                 }}
             >
